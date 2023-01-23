@@ -81,4 +81,16 @@ for(let key in car){
     console.log(car[key])
 }
 
+function countBMW(arrayOfCars) {
+  let count = 0;
+  for (let i = 0; i < arrayOfCars.length; i++) {
+    if (arrayOfCars["company"] === "BMW") {
+      count++;
+      console.log(` We have ${count} BMW  `);
+    } else {
+      console.log(` This is the company: ${arrayOfCars[i]["company"]}`);
+    }
+  }
+}
 
+console.log(countBMW(array));
